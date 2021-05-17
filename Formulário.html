@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta content="text/html"; charset="utf-8">
+	<title>Formulário Cadastro Pessoal</title>
+</head>
+
+<body>
+	<h2>Preencha o formulário abaixo:</h2>
+	<form id=”cadastro” action=”https://www.site.com.br/acesso.php” method=”post”>
+	
+		<table>
+			<tr>
+				<th colspan="4"><u>DADOS PESSOAIS</u></th>
+			</tr>
+			<tr>
+			    <td>Nome:</td>
+				<td colspan="3"> <input type="text" size="60" name="nome"> </td>
+			</tr>
+			<tr>
+			    <td>Data Nascimento:</td>
+				<td> <input type="text" size="1" maxlength="2" name="dia"><strong>/</strong>
+				     <input type="text" size="1" maxlength="2" name="mes"><strong>/</strong>
+					 <input type="text" size="2" maxlength="4" name="ano"> </td>
+				<td colspan="2" align="center">Sexo:</td>
+			</tr>
+			<tr>
+			    <td>CPF:</td>
+				<td> <input type="text" name="cpf"> </td>
+				<td colspan="2" align="center"> <input type="radio" name="sexo" value="m" checked> Masculino
+				 <input type="radio" name="sexo" value="f"> Feminino </td>
+			</tr>
+			<tr>
+			    <td>RG:</td>
+				<td> <input type="text" name="rg"> </td>
+			    <td colspan="2">Orgão Expedidor: <input type="text" size="16" name="orgexp"></td>
+			</tr>
+			<tr>
+			    <td> Endereço: </td>
+				<td> <input type="text" name="end"> </td>
+				<td> CEP: <input type="text" size="12" name="cep"> </td>
+				<td align="center"> UF:
+				 <select name="uf">
+				     <option value="0"> </option>
+				     <option value="1">AC</option>
+				     <option value="2">AL</option>
+				     <option value="3">AP</option>
+				     <option value="4">AM</option>
+					 <option value="5">BA</option>
+				     <option value="6">CE</option>
+				     <option value="7">DF</option>
+				     <option value="8">ES</option>
+					 <option value="9">GO</option>
+				     <option value="10">MA</option>
+				     <option value="11">MT</option>
+				     <option value="12">MS</option>
+					 <option value="13">MG</option>
+				     <option value="14">PA</option>
+				     <option value="15">PB</option>
+				     <option value="16">PR</option>
+					 <option value="17">PE</option>
+				     <option value="18">PI</option>
+				     <option value="19">RR</option>
+					 <option value="20">RO</option>
+				     <option value="21">RJ</option>
+				     <option value="22">RN</option>
+				     <option value="23">RS</option>
+					 <option value="24">SC</option>
+				     <option value="25">SP</option>
+				     <option value="26">SE</option>
+				     <option value="27">TO</option>
+				</td>
+			</tr>
+			<tr>
+			    <td> Bairro: </td>
+				<td> <input type="text" name="bairro"> </td>
+				<td colspan="2"> Município: <input type="text" size="22" name="municp"> </td>			    
+			</tr>
+			<tr>
+			    <td> Estado Civil: </td>
+				<td> <input type="text" name="civil"> </td>
+				<td colspan="2"> Nacionalidade: <input type="text" size="18" name="nacional"> </td>			    
+			</tr>
+			<tr>
+			    <td> Email: </td>
+				<td colspan="3"> <input type="text" size="59" name="email"> </td>
+			</tr>
+	    </table>
+	    <table>
+		    <tr>
+			    <th colspan="4"><u> ESCOLARIDADE </u></th>
+			</tr>
+			<tr>
+			    <td>Escola/Universidade:</td>
+				<td colspan="3"> <input type="text" size="56" name="escol"> </td>
+			</tr>
+			<tr>
+				<td align="center"> Nivel: </td>
+				<td> <select name="nivel" size="3">
+				     <option value="1">Ensino Fundamental</option>
+				     <option value="2">Ensino Médio</option>
+				     <option value="3">Bacharelado</option>
+					 <option value="4">Tecnologo</option>
+					 <option value="5">Mestrado</option>
+					 <option value="6">Doutorado</option>
+				</td>
+				<td colspan="2"> <input type="radio" name="situacao" value="cur" checked> Cursando
+				                 <input type="radio" name="situacao" value="com"> Completo 
+								 <input type="radio" name="situacao" value="inc"> Incompleto 
+				</td>
+			</tr>
+			<tr>
+			    <th colspan="4"><u> IDIOMAS </u></th> 
+			</tr>
+			<tr>
+			    <td> Nivel Basico: </td>
+				<td colspan="3"> <input type="checkbox" name="ingles1" value="i"> Inglês
+				                 <input type="checkbox" name="espanhol1" value="e"> Espanhol
+								 <input type="checkbox" name="italiano1" value="it"> Italiano
+								 <input type="checkbox" name="frances1" value="f"> Francês
+								 <input type="checkbox" name="alemao1" value="a"> Alemão				 
+				</td>
+			</tr>
+			<tr>
+			    <td> Nivel Intermediário: </td>
+				<td colspan="3"> <input type="checkbox" name="ingles2" value="i"> Inglês
+				                 <input type="checkbox" name="espanhol2" value="e"> Espanhol
+								 <input type="checkbox" name="italiano2" value="it"> Italiano
+								 <input type="checkbox" name="frances2" value="f"> Francês
+								 <input type="checkbox" name="alemao2" value="a"> Alemão				 
+				</td>
+			</tr>
+			<tr>
+			    <td> Nivel Fluente: </td>
+				<td colspan="3"> <input type="checkbox" name="ingles3" value="i"> Inglês
+				                 <input type="checkbox" name="espanhol3" value="e"> Espanhol
+								 <input type="checkbox" name="italiano3" value="it"> Italiano
+								 <input type="checkbox" name="frances3" value="f"> Francês
+								 <input type="checkbox" name="alemao3" value="a"> Alemão				 
+				</td>
+			</tr>
+			<tr>
+			    <th colspan="4"><u> SAUDE </u></th> 
+			</tr>
+			<tr>
+			    <td colspan="4"> Possui alguma deficiência:
+				   <input type="radio" name="defic" value="s"> Sim
+				   <input type="radio" name="defic" value="n"> Não </td> 
+			</tr>
+			<tr>
+			    <td colspan="4"> Se sim, qual? <input type="text" size="20" name="doença"> </td>
+			</tr>
+			<tr>
+			    <td align="center"> Fuma? </td>
+				<td colspan="3">  <input type="radio" name="fuma" value="s"> Sim
+				                  <input type="radio" name="fuma" value="n"> Não </td> 
+			</tr>
+			<tr>
+			    <td align="center"> Bebe?  </td>
+				<td colspan="3">
+				    <input type="radio" name="bebe" value="s"> Sim
+				    <input type="radio" name="bebe" value="n"> Não </td> 
+			</tr>
+			<tr>
+		</table>
+		<table>
+			    <th colspan="4"> ESCREVA ALGO SOBRE VOCÊ </th>
+			</tr>
+			<tr>
+			    <td colspan="4"> <textarea name="sobre" rows="8" cols="78"> Digite...</textarea> 
+			</tr>
+			<tr>
+			    <td colspan="2" align="center"> <input type="submit" value="Cadastrar"> </td>
+				<td colspan="2"> <input type="reset" value="Limpar"> </td>
+			</tr>
+	    </table>
+	
+</body>
+
+</html>
